@@ -1,0 +1,62 @@
+/*Declare variables*/
+:root{
+    --beige2:#ffeead;
+    --red2: #ff6f69;
+    --yellow2: #ffcc5c;
+}
+
+.grid{
+    --columns2: 200px 200px
+}
+/*Style*/
+html, body {
+    background: #ef0404;
+    color: var(--red2);
+}
+
+h1, p {
+    color: var(--red2);
+}
+
+#navbar a {
+    --nav-red2:#008f94;  
+    color: var(--nav-red2);
+}
+
+.item {
+    --yellow2: #000000;
+    --red2:#7127d9;
+    background: var(--yellow2);
+}
+
+button {
+    background: var(--red2);
+    color: var(--yellow2);
+}
+.footer{
+    --beige2:#fd2525;
+    background-color: #fd2525;
+}
+
+.featured{
+    --yellow2:#e40505;
+--beige2:#00b3e5;
+--red2:#23e405;
+background-color: var(--beige2);
+}
+.grid {
+    display: grid;
+    grid-template-columns: var(--columns2);
+    grid-auto-rows: 140px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+	.grid{
+        --columns2: 200px
+    }
+body{
+    background-color: white;
+}
+}
